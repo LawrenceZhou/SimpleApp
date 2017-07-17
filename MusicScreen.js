@@ -5,12 +5,15 @@ import {
   StyleSheet,
   Text,
   Button,
-  View
+  TouchableHighlight,
+  View,
+  StatusBar,
 } from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Slider from 'react-native-slider';
 import Video from 'react-native-video';
+import Drawer from 'react-native-drawer';
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
 
@@ -20,6 +23,11 @@ const window = Dimensions.get('window');
 //Music Play Screen
 //
 class MusicScreen extends React.Component {
+    static navigationOptions = ({ navigation }) => ({
+    //title: navigation.state.params.room.name,
+    headerTintColor: "#FFF",
+    headerStyle : styles.background,
+  });
 
   constructor(props){
     super(props);
@@ -34,9 +42,21 @@ class MusicScreen extends React.Component {
     this.render = this.render.bind(this);
   }
 
+  closeControlPanel = () => {
+    this._drawer.close()
+  };
+  openControlPanel = () => {
+    this._drawer.open()
+  };
+
   togglePlay(){
     this.setState({ playing: !this.state.playing });
   }
+
+  drawerDisplay(){
+this.openControlPanel();
+  }
+
 
   toggleVolume(){
     this.setState({ muted: !this.state.muted });
@@ -116,9 +136,9 @@ class MusicScreen extends React.Component {
 
     let playButton;
     if( this.state.playing ){
-      playButton = <Icon onPress={ this.togglePlay.bind(this) } style={ styles.play } name="ios-pause" size={70} color="#fff" />;
+      playButton = <Icon onPress={ this.togglePlay.bind(this) } style={ styles.play } name="ios-pause" size={30} color="#fff" />;
     } else {
-      playButton = <Icon onPress={ this.togglePlay.bind(this) } style={ styles.play } name="ios-play" size={70} color="#fff" />;
+      playButton = <Icon onPress={ this.togglePlay.bind(this) } style={ styles.play } name="ios-play" size={30} color="#fff" />;
     }
 
     let forwardButton;
@@ -129,12 +149,10 @@ class MusicScreen extends React.Component {
     }
 
     let volumeButton;
-    if( this.state.muted ){
-      volumeButton = <Icon onPress={ this.toggleVolume.bind(this) } style={ styles.volume } name="ios-volume-off" size={25} color="#fff" />;
-    } else {
-      volumeButton = <Icon onPress={ this.toggleVolume.bind(this) } style={ styles.volume } name="ios-volume-up" size={25} color="#fff" />;
-    }
-
+      //volumeButton = <TouchableHighlight activeOpacity={ 100 } onPress = {() => this.props.navigation.navigate('MusicInfo', { room: params.room })} underlayColor="rgba(132, 11, 15, 0.6)" underlayColor="rgba(132, 11, 15, 0)">
+      volumeButton = <TouchableHighlight activeOpacity={ 100 } onPress = {this.drawerDisplay.bind(this)} underlayColor="rgba(132, 11, 15, 0.6)" underlayColor="rgba(132, 11, 15, 0)">
+      <Text style={ styles.volume }>...</Text></TouchableHighlight>;
+    
     let shuffleButton;
     if( this.state.shuffle ){
       shuffleButton = <Icon onPress={ this.toggleShuffle.bind(this) } style={ styles.shuffle } name="ios-shuffle-outline" size={25} color="#840B0F" />;
@@ -144,7 +162,36 @@ class MusicScreen extends React.Component {
 
     let image = params.room.background;
     return (
-      <View style={styles.container}>
+       <Drawer
+        ref={(ref) => this._drawer = ref}
+        side={"right"}
+        content={<View><Text>123</Text><Icon onPress={ this.closeControlPanel.bind(this) } name="ios-close" size={25} color="#000" /></View>}
+        >
+
+        <View style={styles.container}>
+        <View style={styles.picContainer}>
+          <Image source={{uri: image,
+                        width: window.width,
+                        height: 240}}/>
+        </View>
+
+        <View style={styles.introContainer}>
+      <Text  style={ styles.introText }>
+      {params.room.introShort}
+      </Text>
+      <View style={{flex: 1, marginRight: 240}}>
+     <TouchableHighlight activeOpacity={ 100 } onPress = {() => this.props.navigation.navigate('RoomAbout', { room: params.room })} underlayColor="rgba(132, 11, 15, 0.6)" underlayColor="rgba(132, 11, 15, 0)">
+        <View style={ styles.playButton}>
+          <Text style={ styles.readMore }>
+            Read More
+          </Text>
+        </View>
+        </TouchableHighlight>
+        </View>
+        </View>
+
+      <View style={styles.playerContainer}>
+
         <Video source={{uri: songPlaying.url }}
             ref="audio"
             volume={ this.state.muted ? 0 : 1.0}
@@ -153,26 +200,13 @@ class MusicScreen extends React.Component {
             onLoad={ this.onLoad.bind(this) }
             onProgress={ this.setTime.bind(this) }
             onEnd={ this.onEnd.bind(this) }
+            playInBackground={true}
             resizeMode="cover"
             repeat={false}/>
 
-        <View style={ styles.header }>
-          <Text style={ styles.headerText }>
-            { params.room.name }
-          </Text>
-        </View>
-        <View style={ styles.headerClose }>
-        </View>
-        <Image
-          style={ styles.songImage }
-          source={{uri: image,
-                        width: window.width - 30,
-                        height: 300}}/>
+       
         <Text style={ styles.songTitle }>
           { songPlaying.title }
-        </Text>
-        <Text style={ styles.albumTitle }>
-          { songPlaying.album }
         </Text>
         <View style={ styles.sliderContainer }>
           <Slider
@@ -198,15 +232,41 @@ class MusicScreen extends React.Component {
           { volumeButton }
         </View>
       </View>
+    </View>
+      </Drawer>
+
     );
   }
 }
 
 const styles = StyleSheet.create({
+    background: {
+    backgroundColor: "#000",
+
+  },
+
   container: {
     flex: 1,
+    backgroundColor: "black",
+  },
+
+  picContainer: {
+    height: 240,
     alignItems: 'center',
-    backgroundColor: '#000',
+  },
+
+  introContainer: {
+    height: 260,
+    alignItems: 'center',
+    backgroundColor: "black",
+    paddingTop: 10,
+    paddingLeft: 20,
+  },
+
+  playerContainer: {
+    paddingBottom: 10,
+    alignItems: 'center',
+    backgroundColor: "rgba(132, 11, 15, 0.8)",
   },
   header: {
     marginTop: 17,
@@ -233,9 +293,9 @@ const styles = StyleSheet.create({
   songTitle: {
     color: "white",
     fontFamily: "Helvetica Neue",
-    marginBottom: 10,
-    marginTop: 13,
-    fontSize: 19
+    marginBottom: 4,
+    marginTop: 4,
+    fontSize: 14
   },
   albumTitle: {
     color: "#BBB",
@@ -245,25 +305,28 @@ const styles = StyleSheet.create({
   },
   controls: {
     flexDirection: 'row',
-    marginTop: 30,
+    marginTop: 0,
   },
   back: {
-    marginTop: 22,
+    marginTop: 7,
     marginLeft: 45,
   },
   play: {
+    marginTop: 5,
     marginLeft: 50,
     marginRight: 50,
   },
   forward: {
-    marginTop: 22,
+    marginTop: 7,
     marginRight: 45,
   },
   shuffle: {
-    marginTop: 26,
+    marginTop: 7,
   },
   volume: {
-    marginTop: 26,
+    fontSize: 30,
+    marginTop: 0,
+    color: "white",
   },
   sliderContainer: {
     width: window.width - 40,
@@ -298,7 +361,32 @@ const styles = StyleSheet.create({
     shadowOffset: {width: 0, height: 0},
     shadowRadius: 2,
     shadowOpacity: 1,
-  }
+  },
+
+   playButton: {
+    marginBottom: 0,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingLeft: 20,
+    paddingRight: 20,
+    backgroundColor: 'rgba(255,255,255,0)',
+    borderRadius: 200,
+    borderWidth: 5,
+    borderColor: "#840B0F",
+    width: 140,
+  },
+
+  readMore: {
+    color: "#840B0F",
+    fontFamily: "Helvetica Neue",
+    textAlign: 'center',
+  },
+
+  introText: {
+    color: "white",
+    fontFamily: "Helvetica Neue",
+    marginBottom: 5,
+  },
 });
 
 function withLeadingZero(amount){

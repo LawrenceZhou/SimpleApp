@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/hamasakiyijun/MuseumMusic/node_modules/react-native/React/Base/RCTErrorInfo.m \
-  /Users/hamasakiyijun/MuseumMusic/node_modules/react-native/React/Base/RCTErrorInfo.h \
-  /Users/hamasakiyijun/MuseumMusic/node_modules/react-native/React/Base/RCTJSStackFrame.h
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTErrorInfo.m \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTErrorInfo.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTJSStackFrame.h

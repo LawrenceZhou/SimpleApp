@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/hamasakiyijun/MuseumMusic/node_modules/react-native/React/Views/RCTMapOverlay.m \
-  /Users/hamasakiyijun/MuseumMusic/node_modules/react-native/React/Views/RCTMapOverlay.h
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTMapOverlay.m \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTMapOverlay.h

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/hamasakiyijun/MuseumMusic/node_modules/react-native/React/Views/RCTActivityIndicatorView.m \
-  /Users/hamasakiyijun/MuseumMusic/node_modules/react-native/React/Views/RCTActivityIndicatorView.h
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTActivityIndicatorView.m \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTActivityIndicatorView.h

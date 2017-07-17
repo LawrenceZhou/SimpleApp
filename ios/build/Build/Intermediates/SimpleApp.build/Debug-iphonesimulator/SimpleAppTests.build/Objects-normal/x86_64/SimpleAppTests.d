@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/hamasakiyijun/MuseumMusic/ios/SimpleAppTests/SimpleAppTests.m \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/SimpleAppTests/SimpleAppTests.m \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h \
@@ -35,13 +35,13 @@ dependencies: \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestErrors.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestDefines.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/hamasakiyijun/MuseumMusic/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h
