@@ -16,10 +16,10 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTFrameUpdate.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Modules/RCTDevSettings.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Executors/RCTJSCErrorHandling.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Profiler/RCTJSCProfiler.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTJSCErrorHandling.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Profiler/RCTProfile.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Profiler/RCTJSCProfiler.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Modules/RCTDevMenu.h

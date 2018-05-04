@@ -15,6 +15,7 @@ import Slider from 'react-native-slider';
 import Video from 'react-native-video';
 import Drawer from 'react-native-drawer';
 import { StackNavigator, TabNavigator } from 'react-navigation';
+import Sound from 'react-native-sound';
 
 
 const window = Dimensions.get('window');

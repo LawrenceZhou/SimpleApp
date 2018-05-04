@@ -15,8 +15,8 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTEventDispatcher.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTLog.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Profiler/RCTProfile.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Profiler/RCTProfile.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/DevSupport/RCTPackagerClientResponder.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \

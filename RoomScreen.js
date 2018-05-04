@@ -17,7 +17,11 @@ import Slider from 'react-native-slider';
 import Video from 'react-native-video';
 import Drawer from 'react-native-drawer';
 import Swiper from 'react-native-swiper';
+import Lightbox from 'react-native-lightbox';
+import PinchZoomView from 'react-native-pinch-zoom-view';
 import { StackNavigator, TabNavigator } from 'react-navigation';
+import I18n from './i18n.js';
+
 
 const window = Dimensions.get('window');
 const PARALLAX_HEADER_HEIGHT = 280;
@@ -29,7 +33,7 @@ const AVATAR_SIZE = 120;
 //List all the songs belonged to the room
 class RoomScreen extends React.Component {
 	static navigationOptions = ({ navigation }) => ({
-    title: navigation.state.params.room.name,
+    title: I18n.t(navigation.state.params.room.name),
     headerTintColor: "#FFF",
     headerStyle : styles.background,
   });
@@ -331,10 +335,11 @@ this.openControlPanel();
     const { params } = this.props.navigation.state;
     let songPlaying = params.room.songs[this.state.songIndex];
     let songPercentage;
-    if(params.room.name == "Tota pulchra es"){
-      this.state.quoteTPE = true;
-      this.state.quote = false;
-    }else if( params.room.name == "Felice Anerio"){
+    //if(params.room.name == "Tota pulchra es"){
+    //  //this.state.quoteTPE = true;
+    //  //this.state.quote = false;
+    //}else 
+    if( params.room.name == "room8"){
       this.state.quoteFA = true;
       this.state.quote = false;
     }
@@ -373,8 +378,12 @@ this.openControlPanel();
         ref={(ref) => this._drawer = ref}
         type="overlay"
         side={"right"}
+        negotiatePan = {false}
         styles={drawerStyles}
-        content={<View style = {styles.drawerBackground}><Text style = {styles.songListTitle}>Song Lists</Text><Icon onPress={ this.closeControlPanel.bind(this) } name="ios-close" size={40} color="#FFF" style = {styles.closeButton}/><View style = {styles.titleBar}></View>{this.renderSongsList()}</View>}
+         tweenHandler={(ratio) => ({
+    main: { opacity:(2-ratio)/2 }
+  })}
+        content={<View style = {styles.drawerBackground}><Text style = {styles.songListTitle}>{I18n.t("music")}</Text><Icon onPress={ this.closeControlPanel.bind(this) } name="ios-close" size={40} color="#FFF" style = {styles.closeButton}/><View style = {styles.titleBar}></View>{this.renderSongsList()}</View>}
         >
         <StatusBar
      backgroundColor="blue"
@@ -384,28 +393,37 @@ this.openControlPanel();
         <View style={styles.container}>
         <View style={styles.picContainer}>
 
-         <Swiper style={styles.wrapper} 
+         <Swiper style={styles.wrapper}
+         loop = {false} 
           showsButtons={true} 
           buttonWrapperStyle  = {styles.bWrapperStyle}
           nextButton = {<Text style={{fontSize:60, color:'#840B0F',
           }}>›</Text>}
           prevButton = {<Text style={{fontSize:60, color:'#840B0F',
-          }}>‹</Text>}>
+          }}>‹</Text>}
+          activeDotColor='#840B0F' >
 
            {params.room.pics.map(function(name, index){
-                    return <Image key = {index} 
-                    source={{uri: name,
-                        width: window.width,
-                        height: 240}}/>;
+                    return <Lightbox key = {index} underlayColor="white" springConfig={{tension: 30, friction: 7} } swipeToDismiss={false}  maximumZoomScale={2} renderContent={() => {return <View ><ScrollView
+          minimumZoomScale={1}
+          maximumZoomScale={2}
+          centerContent={true}
+        ><Image key = {index} resizeMode="contain" 
+                    source={{uri: name, height: window.height, width: window.width }}/></ScrollView></View>;}}>
+                    <Image key = {index}
+                    source={{uri: name, height: 240, width: window.width
+                        }}/></Lightbox>;
                   })}
+
           </Swiper>
+
         </View>
 
         <View style={styles.introContainer}>
+
         <ScrollView indicatorStyle =  { 'black'}  >
-        {this.state.quote && <View><Text  style={ styles.introText }>{params.room.intro} </Text></View>}
-        {this.state.quoteTPE && <View><Text  style={ styles.introText }>{params.room.intro[0]} </Text><Text  style={ styles.quoteText }> Tota pulchra es Maria, et Macula non est in Te</Text><Text style={ styles.introText }>{params.room.intro[1]}</Text></View>}
-        {this.state.quoteFA && <View><Text  style={ styles.introText }>{params.room.intro}</Text><Text  style={ styles.quoteText }>..You, who know all things in your divine gaze, as it were, in the mirror of eternity, behold most clearly, know by what sense of spirit, by what mark of devotion I have been ordered by the Illustrious Duke Altemps to compose to your glory, however great that glory is, these songs sought from prophecy. You know with what joy this [task] has been received and accomplished at considerable expense to me. You know that no one of higher or more holy rank than the duke himself has heard any of this musical work, except in the cele­ brated abode in the very sanctuaries of his most spacious palazzo...{"\n"}At Rome, from your chapel in the palazzo of the Duke of Altemp</Text><Text  style={ styles.introText }>(translated by Couchman, 1989)</Text></View>}
+        {this.state.quote && <View><Text  style={ styles.introText }>{I18n.t(params.room.intro)} </Text></View>}
+        {this.state.quoteFA && <View><Text  style={ styles.introText }>{I18n.t(params.room.intro)}</Text><Text  style={ styles.quoteText }>{I18n.t(params.room.quote)}</Text></View>}
        
         
         </ScrollView>
@@ -474,7 +492,6 @@ const styles = StyleSheet.create({
   drawerBackground: {
     backgroundColor: "rgba(0, 0, 0, 0.8)",
     height: window.height,
-
   },
 
   container: {
@@ -652,6 +669,7 @@ const styles = StyleSheet.create({
   },
 
   bWrapperStyle: {
+    backgroundColor: 'transparent',
     position: 'absolute', 
     paddingHorizontal: 15,  
     paddingVertical: 30,  

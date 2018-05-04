@@ -21,13 +21,13 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
-  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/Libraries/Text/RCTShadowRawText.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/Libraries/Text/RCTText.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/Libraries/Text/RCTTextView.h \

@@ -1,5 +1,4 @@
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTRootContentView.o
-/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTConvert+MapKit.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTStatusBarManager.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSourceCode.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTJSCProfiler.o
@@ -13,7 +12,6 @@
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSegmentedControl.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTRootView.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTExceptionsManager.o
-/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTMapAnnotation.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTSamplingProfilerPackagerMethod.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTRootShadowView.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTModuleMethod.o
@@ -48,8 +46,8 @@
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTScrollView.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTReloadCommand.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTAccessibilityManager.o
-/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTJSCErrorHandling.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTDevLoadingView.o
+/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTJSCErrorHandling.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTiming.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTAppState.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTJSCExecutor.o
@@ -69,14 +67,12 @@
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTView.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTPlatform.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTPackagerClientResponder.o
-/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTMapOverlay.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTKeyboardObserver.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTI18nManager.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTConvert+CoreLocation.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTabBarItemManager.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTKeyCommands.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTUtils.o
-/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTMapManager.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTRefreshControl.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTWebView.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTBridge.o
@@ -95,7 +91,6 @@
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTTabBar.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTRedBox.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTModalHostViewController.o
-/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTMap.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTNavItem.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTEventDispatcher.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTReloadPackagerMethod.o
@@ -106,3 +101,4 @@
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTConvert+Transform.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTComponentData.o
 /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTNavigatorManager.o
+/Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/Objects-normal/x86_64/RCTDeviceInfo.o

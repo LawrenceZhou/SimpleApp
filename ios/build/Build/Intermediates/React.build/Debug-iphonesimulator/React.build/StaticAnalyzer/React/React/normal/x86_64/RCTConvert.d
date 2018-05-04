@@ -6,11 +6,11 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTDefines.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTLog.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTImageSource.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTParserUtils.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTParserUtils.h

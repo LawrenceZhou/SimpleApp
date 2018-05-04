@@ -17,6 +17,7 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTAnimationType.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTBorderStyle.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
@@ -24,9 +25,6 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTEventDispatcher.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/UIView+React.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTModuleData.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Modules/RCTUIManager.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTRootView.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTRootView.h

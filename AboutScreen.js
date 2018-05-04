@@ -10,6 +10,7 @@ Image,
   Button,
   StatusBar,
   ScrollView,
+  Dimensions,
 } from 'react-native';
 import React from 'react';
 import { StackNavigator, TabNavigator } from 'react-navigation';
@@ -22,6 +23,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 //Research
 //Collaboration
 //Logos
+const {height, width_} = Dimensions.get('window');
 class AboutScreen extends React.Component {
   static navigationOptions = {
     tabBarLabel: ({ tintColor, focused }) => (
@@ -72,15 +74,17 @@ class AboutScreen extends React.Component {
          <Text  style={ styles.title }>{creditinfo.title } </Text>
          <Text  style={ styles.info }>{creditinfo.info } </Text>
          </View>}/>
+         <View style={{flex: 1, flexDirection: 'row',  justifyContent: 'space-between'}}>
                   <Image
-              source={require('./assets/images/museo-logo.png')}
+              source={require('./assets/images/Icon-256.png')}
               style = {styles.logoContainer1}/>
         <Image
               source={require('./assets/images/aar-logo.png')}
               style = {styles.logoContainer2}/>
         <Image
-          source={require('./assets/images/su-logo.png')}
+          source={require('./assets/images/SU_Seal_Red.png')}
           style = {styles.logoContainer3}/>
+          </View>
           </ScrollView>
       </View>
     );
@@ -97,7 +101,7 @@ const creditInfo =
           "Talya Berger, Senior Lecturer, Stanford University\n" + 
           "Kathleen Christian, Senior Lecturer, The Open University\n" +
           "Yasmin Vobis, The Rhode Island School of Design\n" +
-          "Yijun Zhou, Stanford university (App design and implementation)",
+          "Yijun Zhou, Stanford University (App design and implementation)",
   },
 
   {
@@ -125,6 +129,9 @@ const styles = StyleSheet.create({
 
   tabBarIcon: {
     color: '#840B0F',
+textAlign: 'center',
+     width: 32,
+     height:54,
   },
 
   container: {
@@ -194,27 +201,26 @@ const styles = StyleSheet.create({
   },
 
   logoContainer1: {
-    position: "absolute",
-    top: 315, 
-    left: 10,
+    position: "relative", 
+    top: 5,
+    marginLeft: 20,
     width: 100,
     height: 100,
     resizeMode: "cover",
   },
    logoContainer2: {
-    position: "absolute",
-    top: 312, 
-    left: 135,
+    position: "relative",
+    top: 2, 
     width: 105,
     height: 105,
     resizeMode: "cover",
   },
   logoContainer3: {
-    position: "absolute",
-    top: 300, 
-    left: 245,
-    width: 130,
-    height: 130,
+    position: "relative",
+    top: 0, 
+    marginRight: 10,
+    width: 110,
+    height: 110,
     resizeMode: "cover",
   },
 });

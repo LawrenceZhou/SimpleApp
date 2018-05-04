@@ -15,6 +15,7 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTEventDispatcher.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTKeyCommands.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTTouchHandler.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Modules/RCTUIManager.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTViewManager.h \
@@ -28,7 +29,6 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/UIView+React.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTView.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTRootContentView.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Profiler/RCTProfile.h

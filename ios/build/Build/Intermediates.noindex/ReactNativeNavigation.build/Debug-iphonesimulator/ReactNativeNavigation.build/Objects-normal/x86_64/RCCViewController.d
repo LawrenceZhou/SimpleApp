@@ -1,0 +1,36 @@
+dependencies: \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCViewController.m \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCViewController.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCNavigationController.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCTabBarController.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerController.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCDrawerController/MMDrawerController/MMDrawerController.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCDrawerController/RCCDrawerProtocol.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCDrawerController/RCCTheSideBarManagerViewController.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/TheSidebarController.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCDrawerController/TheSidebarController/Animations/SidebarAnimation.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCManager.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCExternalViewControllerProtocol.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/Helpers/RCTHelpers.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/Helpers/RCCTitleViewHelper.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native-navigation/ios/RCCCustomTitleView.h

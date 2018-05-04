@@ -12,6 +12,7 @@ Image,
 import React from 'react';
 import { StackNavigator, TabNavigator } from 'react-navigation';
 import Icon from 'react-native-vector-icons/Ionicons';
+import I18n from './i18n.js';
 
 import { Rooms } from './songData';
 
@@ -28,9 +29,10 @@ class TourScreen extends React.Component {
         <Icon
           name={focused ? 'ios-paw' : 'ios-paw-outline'}
           size={32}
-          style={styles.tabBarIcon}
+           style={styles.tabBarIcon}
+
         />
-      ),
+      ),  
     title: "Tour",
   };
 
@@ -56,7 +58,8 @@ class TourScreen extends React.Component {
           source={{uri: room.background}}
         >
         <View style={ styles.container }>
-          <Text style={ styles.roomName }>{room.name }</Text>
+
+          <Text style={ styles.roomName }>{I18n.t(room.name)}</Text>
         </View>
         </Image>
       </TouchableHighlight>}/>
@@ -120,6 +123,9 @@ const styles = StyleSheet.create({
 
   tabBarIcon: {
     color: '#840B0F',
+    textAlign: 'center',
+     width: 32,
+     height:54,
   },
 });
 

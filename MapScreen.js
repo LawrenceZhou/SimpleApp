@@ -10,9 +10,7 @@ import { Rooms } from './songData';
 class MapScreen extends React.Component {
   static navigationOptions = ({ navigation }) => ({
     tabBarLabel: ({ tintColor, focused }) => (
-      <Text style = {styles.tabBarText}>
-      Map
-      </Text>
+      <Text style = {styles.tabBarText}>Map</Text>
     ),
     tabBarIcon: ({ tintColor, focused }) => (
         <Icon
@@ -25,6 +23,36 @@ class MapScreen extends React.Component {
 
   });
     render() {
+   //  var audioCtx = (window.AudioContext || window.webkitAudioContext);
+   //  ajaxRequest = new XMLHttpRequest();
+   //  ajaxRequest.open('GET', 'applePen.wav', true);
+   //  ajaxRequest.responseType = 'arraybuffer';
+
+   //  ajaxRequest.onload = function() {
+   //  var audioData = ajaxRequest.response;
+   //  audioCtx.decodeAudioData(audioData, function(buffer) {
+   //  if (navigator.mediaDevices) {
+   //    navigator.mediaDevices.getUserMedia ({audio: true})
+   //    .then(function(stream) {
+   //      var source = audioCtx.createMediaStreamSource(stream);
+   //      var gain = audioCtx.createGain();
+   //    //gain.gain.value = 0.5; // static for now...
+   //     var convolver = audioCtx.createConvolver();
+   //    convolver.buffer = buffer;
+   //    source.connect(gain);
+   //    gain.connect(convolver);
+   //    convolver.connect(audioCtx.destination);
+   //  }).catch(function(err) {
+   //    console.log('The following gUM error occured: ' + err);
+   //  });
+   //  } else {
+   //  console.log('getUserMedia not supported on your browser!');
+   //   }
+   //  }, function(e){"Error with decoding audio data" + e.err});
+   //}
+
+   //  ajaxRequest.send();
+
     return( 
 
     <View style={styles.outContainer}>
@@ -57,7 +85,7 @@ class MapScreen extends React.Component {
           </TouchableHighlight>
 
           <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[2] })}>
-            <View style={ [styles.numberButton, {top: -30, left: 300}] }>
+            <View style={ [styles.numberButton, {top: 120, left: 80}] }>
               <Text style={ styles.numberButtonText }>
                 3
               </Text>
@@ -65,7 +93,7 @@ class MapScreen extends React.Component {
           </TouchableHighlight>
 
           <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[3] })}>
-            <View style={ [styles.numberButton, {top: 80, left: 275}] }>
+            <View style={ [styles.numberButton, {top: -30, left: 300}] }>
               <Text style={ styles.numberButtonText }>
                 4
               </Text>
@@ -73,7 +101,7 @@ class MapScreen extends React.Component {
           </TouchableHighlight>
 
           <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[4] })}>
-            <View style={ [styles.numberButton, {top: 110, left: 155}] }>
+            <View style={ [styles.numberButton, {top: 80, left: 275}] }>
               <Text style={ styles.numberButtonText }>
                 5
               </Text>
@@ -81,7 +109,7 @@ class MapScreen extends React.Component {
           </TouchableHighlight>
 
           <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[5] })}>
-            <View style={ [styles.numberButton, {top: 20, left: 250}] }>
+            <View style={ [styles.numberButton, {top: 110, left: 155}] }>
               <Text style={ styles.numberButtonText }>
                 6
               </Text>
@@ -89,7 +117,7 @@ class MapScreen extends React.Component {
           </TouchableHighlight>
 
           <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[6] })}>
-            <View style={ [styles.numberButton, {top: 170, left: 240}] }>
+            <View style={ [styles.numberButton, {top: 20, left: 250}] }>
               <Text style={ styles.numberButtonText }>
                 7
               </Text>
@@ -97,7 +125,7 @@ class MapScreen extends React.Component {
           </TouchableHighlight>
 
           <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[7] })}>
-            <View style={ [styles.numberButton, {top: 170, left: 320}] }>
+            <View style={ [styles.numberButton, {top: 170, left: 240}] }>
               <Text style={ styles.numberButtonText }>
                 8
               </Text>
@@ -105,85 +133,101 @@ class MapScreen extends React.Component {
           </TouchableHighlight>
 
           <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[8] })}>
-            <View style={ [styles.numberButton, {top: 60, left: 120}] }>
+            <View style={ [styles.numberButton, {top: 170, left: 320}] }>
               <Text style={ styles.numberButtonText }>
                 9
               </Text>
             </View>
           </TouchableHighlight>
 
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(132, 11, 15, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[9] })}>
+            <View style={ [styles.numberButton, {top: 60, left: 120}] }>
+              <Text style={ styles.numberButtonText }>
+                10
+              </Text>
+            </View>
+          </TouchableHighlight>
+
            <Text style={ styles.churchText }>
-                Chapel and sacristy:
+                {I18n.t("floating")}:
           </Text>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[0] })}>
             <View style={ [styles.textButton, {top: 220}] }>
             <Text style={ styles.textButtonText }>
-                1. Introduction(Narthex)
+                1. {I18n.t("room1")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[1] })}>
             <View style={ [styles.textButton, {top: 245}] }>
               <Text style={ styles.textButtonText }>
-                2. Tota pulchas es
+                2. {I18n.t("room2")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[2] })}>
             <View style={ [styles.textButton, {top: 270}] }>
               <Text style={ styles.textButtonText }>
-                3. Coretto
+                3. {I18n.t("room3")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[3] })}>
             <View style={ [styles.textButton, {top: 295}] }>
               <Text style={ styles.textButtonText }>
-                4. Pomerancio's fresco
+                4. {I18n.t("room4")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[4] })}>
             <View style={ [styles.textButton, {top: 320}] }>
               <Text style={ styles.textButtonText }>
-                5. Leoni's canon
+                5. {I18n.t("room5")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[5] })}>
             <View style={ [styles.textButton, {top: 345}] }>
               <Text style={ styles.textButtonText }>
-                6. Duke Altemps and his music
+                6. {I18n.t("room6")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[6] })}>
             <View style={ [styles.textButton, {top: 370}] }>
               <Text style={ styles.textButtonText }>
-                7. Felice Anerio
+                7. {I18n.t("room7")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[7] })}>
             <View style={ [styles.textButton, {top: 395}] }>
               <Text style={ styles.textButtonText }>
-                8. The Altemps Codex
+                8. {I18n.t("room8")}
               </Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)">
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[8] })}>
             <View style={ [styles.textButton, {top: 420}] }>
               <Text style={ styles.textButtonText }>
-                9. On the acoustics of sacred spaces in 16th{"\n"}    century Rome 
+                9. {I18n.t("room9")}
+              </Text>
+            </View>
+          </TouchableHighlight>
+
+          <TouchableHighlight activeOpacity={ 100 } underlayColor="rgba(255, 255, 255, 0)" onPress = {() => this.props.navigation.navigate('Room', { room: Rooms[9] })}>
+            <View style={ [styles.textButton, {top: 445}] }>
+              <Text style={ styles.textButtonText }>
+                10. {I18n.t("room10")}
               </Text>
             </View>
           </TouchableHighlight>
@@ -263,6 +307,9 @@ const styles = StyleSheet.create({
 
   tabBarIcon: {
     color: '#840B0F',
+    textAlign: 'center',
+     width: 32,
+     height:54,
   },
 
   directIcon: {

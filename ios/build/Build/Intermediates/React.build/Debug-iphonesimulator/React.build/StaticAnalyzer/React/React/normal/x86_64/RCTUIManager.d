@@ -15,6 +15,7 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTBorderStyle.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTLog.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/hamasakiyijun/SimpleAppcopy/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
@@ -31,9 +32,9 @@ dependencies: \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTBridgeMethod.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTNullability.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTRootContentView.h \
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTView.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTRootShadowView.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTShadowView.h \
   /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTRootViewInternal.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTScrollableProtocol.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTView.h
+  /Users/hamasakiyijun/SimpleAppcopy/node_modules/react-native/React/Views/RCTScrollableProtocol.h
